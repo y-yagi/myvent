@@ -1,27 +1,31 @@
-= form_for @event do |f|
+= form_with(model: @event) do |f|
   - if @event.errors.any?
-    #error_explanation
-      h2 = "#{pluralize(@event.errors.count, "error")} prohibited this event from being saved:"
-      ul
-        - @event.errors.full_messages.each do |message|
-          li = message
+    ul
+      - @event.errors.full_messages.each do |message|
+        li = message
 
-  .field
-    = f.label :name
-    = f.text_field :name
-  .field
-    = f.label :start_at
-    = f.date_field :start_at
-  .field
-    = f.label :end_at
-    = f.date_field :end_at
-  .field
-    = f.label :url
-    = f.text_field :url
-  .field
-    = f.label :place_name
-    = f.text_field :place_name
-  .field
-    = f.label :memo
-    = f.text_area :memo
-  .actions = f.submit
+  .mdl-textfield.mdl-js-textfield
+    = f.label :name, class: 'mdl-textfield__label'
+    = f.text_field :name, class: 'mdl-textfield__input', id: :event_name
+  br
+  .mdl-textfield.mdl-js-textfield
+    = f.label :start_at, class: 'mdl-textfield__label'
+    = f.date_field :start_at, class: 'mdl-textfield__input', id: :event_start_at
+  br
+  .mdl-textfield.mdl-js-textfield
+    = f.label :end_at, class: 'mdl-textfield__label'
+    = f.date_field :end_at, class: 'mdl-textfield__input', id: :event_end_at
+  br
+  .mdl-textfield.mdl-js-textfield
+    = f.label :url, class: 'mdl-textfield__label'
+    = f.text_field :url, class: 'mdl-textfield__input', id: :event_url
+  br
+  .mdl-textfield.mdl-js-textfield
+    = f.label :place_name, class: 'mdl-textfield__label'
+    = f.text_field :place_name, class: 'mdl-textfield__input', id: :event_place_name
+  br
+  .mdl-textfield.mdl-js-textfield
+    = f.label :memo, class: 'mdl-textfield__label'
+    = f.text_field :memo, class: 'mdl-textfield__input', id: :event_memo
+  br
+  .actions = f.submit class: 'mdl-button mdl-js-button mdl-button--raised mdl-button--accent'
