@@ -9,7 +9,6 @@ table
       th Url
       th Place name
       th Memo
-      th User
       th
       th
       th
@@ -23,7 +22,6 @@ table
         td = event.url
         td = event.place_name
         td = event.memo
-        td = event.user
         td = link_to 'Show', event
         td = link_to 'Edit', edit_event_path(event)
         td = link_to 'Destroy', event, data: { confirm: 'Are you sure?' }, method: :delete
