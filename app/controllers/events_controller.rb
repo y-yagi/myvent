@@ -1,11 +1,8 @@
 class EventsController < ApplicationController
-  before_action :set_event, only: [:show, :edit, :update, :destroy]
+  before_action :set_event, only: [:edit, :update, :destroy]
 
   def index
     @events = Event.all
-  end
-
-  def show
   end
 
   def new
@@ -19,7 +16,7 @@ class EventsController < ApplicationController
     @event = Event.build(event_params, current_user)
 
     if @event.save
-      redirect_to @event, notice: 'Event was successfully created.'
+      redirect_to events_url, notice: 'Event was successfully created.'
     else
       render :new
     end
@@ -27,7 +24,7 @@ class EventsController < ApplicationController
 
   def update
     if @event.update(event_params)
-      redirect_to @event, notice: 'Event was successfully updated.'
+      redirect_to events_url, notice: 'Event was successfully updated.'
     else
       render :edit
     end
