@@ -1,31 +1,31 @@
-h1 Listing events
+h3.logo-font イベントリスト
 
-table
-  thead
-    tr
-      th Name
-      th Start at
-      th End at
-      th Url
-      th Place name
-      th Memo
-      th
-      th
-      th
+= link_to '登録', new_event_path, class: 'mdl-button mdl-js-button mdl-button--raised mdl-button--accent'
 
-  tbody
-    - @events.each do |event|
-      tr
-        td = event.name
-        td = event.start_at
-        td = event.end_at
-        td = event.url
-        td = event.place_name
-        td = event.memo
-        td = link_to 'Show', event
-        td = link_to 'Edit', edit_event_path(event)
-        td = link_to 'Destroy', event, data: { confirm: 'Are you sure?' }, method: :delete
+- if @events.present?
+  hr
 
-br
+  .scroll-box
+    table.mdl-data-table.mdl-js-data-table.mdl-shadow--2dp
+      thead
+        tr
+          th.mdl-data-table__cell--non-numeric = attributes_t('event.name')
+          th.mdl-data-table__cell--non-numeric = attributes_t('event.start_at')
+          th.mdl-data-table__cell--non-numeric = attributes_t('event.end_at')
+          th.mdl-data-table__cell--non-numeric = attributes_t('event.place_name')
+          th.mdl-data-table__cell--non-numeric = attributes_t('event.memo')
+          th
+          th
+          th
 
-= link_to 'New Event', new_event_path
+      tbody
+        - @events.each do |event|
+          tr
+            td = event.name
+            td = event.start_at
+            td = event.end_at
+            td = event.place_name
+            td = event.memo
+            td = link_to event.url, target: '_blank'
+            td = link_to '編集', edit_event_path(event)
+            td = link_to '削除', event, data: { confirm: '本当によろしいですか?' }, method: :delete

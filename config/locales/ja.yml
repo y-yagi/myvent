@@ -11,6 +11,10 @@ ja:
     attributes:
       event:
         name: 名称
+        start_at: 開始日
+        end_at: 終了日
+        place_name: 場所
+        memo: メモ
   date:
     abbr_day_names:
     - 日
