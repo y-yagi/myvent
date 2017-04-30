@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
     @user = User.find_or_create_from_auth_hash(auth_hash)
     @user.update_if_needed!(auth_hash)
     session[:user_id] = @user.id
-    redirect_to books_url
+    redirect_to events_url
   end
 
   def destroy

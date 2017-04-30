@@ -1,0 +1,27 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @event.name
+p
+  strong Start At:
+  = @event.start_at
+p
+  strong End At:
+  = @event.end_at
+p
+  strong Url:
+  = @event.url
+p
+  strong Place name:
+  = @event.place_name
+p
+  strong Memo:
+  = @event.memo
+p
+  strong User:
+  = @event.user
+
+= link_to 'Edit', edit_event_path(@event)
+'  |
+= link_to 'Back', events_path
