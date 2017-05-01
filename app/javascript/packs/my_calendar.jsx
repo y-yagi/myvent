@@ -12,6 +12,7 @@ BigCalendar.setLocalizer(
 const MyCalendar = props => (
   <BigCalendar
     events={ props.events }
+    onSelectEvent={ event => window.location.href = event.url }
   />
 );
 
