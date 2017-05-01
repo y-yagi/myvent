@@ -8,36 +8,30 @@ moment.locale('ja');
 BigCalendar.setLocalizer(
   BigCalendar.momentLocalizer(moment)
 )
+
 const MyCalendar = props => (
   <BigCalendar
     events={ props.events }
   />
 );
 
-
 MyCalendar.propTypes = {
   events: PropTypes.array
 }
 
 const Calendar = document.getElementById('calendar')
-const Events = [
-  {
-    'title': 'All Day Event',
-    'allDay': true,
-    'start': "2017-05-01",
-    'end': "2017-05-01"
-  },
-  {
-    'title': 'Long Event',
-    'start': "2017-05-07",
-    'end': "2017-05-10"
-  }
-]
 
+const fetchEvents = () => {
+  fetch('/events.json', { credentials: 'same-origin' }).then(response => {
+    return response.json()
+  }).then(events => {
+    ReactDOM.render(
+      <MyCalendar events={ events } />,
+      calendar.appendChild(document.createElement('div')),
+    )
+  })
+}
 
 document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(
-    <MyCalendar events={ Events } />,
-    calendar.appendChild(document.createElement('div')),
-  )
+  fetchEvents();
 })
