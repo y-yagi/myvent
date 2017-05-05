@@ -1,0 +1,9 @@
+@events.map do |event|
+  {
+    title: event.name,
+    allDay: true,
+    start: event.start_at,
+    end: event.end_at,
+    url: edit_event_path(event)
+  }
+end

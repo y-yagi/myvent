@@ -1,3 +1,5 @@
+= javascript_pack_tag 'my_calendar'
+
 h3.logo-font イベントリスト
 
 = link_to '登録', new_event_path, class: 'mdl-button mdl-js-button mdl-button--raised mdl-button--accent'
@@ -29,3 +31,7 @@ h3.logo-font イベントリスト
             td = link_to event.url, target: '_blank'
             td = link_to '編集', edit_event_path(event)
             td = link_to '削除', event, data: { confirm: '本当によろしいですか?' }, method: :delete
+
+  hr
+  div#calendar
+

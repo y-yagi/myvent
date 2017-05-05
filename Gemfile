@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'jb'
 gem 'rails', '~> 5.1.0'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
@@ -13,6 +14,7 @@ gem 'puma', '~> 3.7'
 gem 'slim-rails'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
+gem 'webpacker'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
