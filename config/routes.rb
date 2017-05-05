@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :events
-  root 'index#index'
+  root 'events#index'
 
   get '/auth/:provider/callback', to: 'sessions#create'
   post '/auth/:provider/callback', to: 'sessions#create'
