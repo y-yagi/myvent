@@ -18,7 +18,11 @@ gem 'webpacker'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+end
+
+group :test do
   gem 'capybara', '~> 2.13.0'
+  gem 'minitest-sub_test_case'
 end
 
 group :development do
