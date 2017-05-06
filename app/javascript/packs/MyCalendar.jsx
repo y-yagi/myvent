@@ -20,8 +20,6 @@ MyCalendar.propTypes = {
   events: PropTypes.array
 }
 
-const Calendar = document.getElementById('calendar')
-
 const fetchEvents = () => {
   fetch('/events.json', { credentials: 'same-origin' }).then(response => {
     return response.json()
