@@ -1,17 +1,10 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  duration: 
-  url: MyString
-  place_name: MyString
-  memo: MyText
-  user: one
-
-two:
-  name: MyString
-  duration: 
-  url: MyString
-  place_name: MyString
-  memo: MyText
-  user: two
+mucha:
+  name: ミュシャ展
+  start_at: 2017-03-08
+  end_at: 2017-06-05
+  url: http://www.mucha2017.jp/
+  place_name: 国立新美術館
+  memo: 朝の方が空いてる
+  user: google

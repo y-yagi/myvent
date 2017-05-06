@@ -1,11 +1,4 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  uid: MyString
-  provider: MyString
-  email: MyString
-
-two:
-  uid: MyString
-  provider: MyString
-  email: MyString
+google:
+  uid: 1
+  provider: google_oauth2
+  email: test@google.com
