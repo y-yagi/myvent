@@ -33,7 +33,6 @@ class EventsController < ApplicationController
   def destroy
     @event.destroy
     redirect_to events_url, notice: t('messages.destroyed', model: Event.model_name.human)
-    else
   end
 
   private
