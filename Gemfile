@@ -22,6 +22,7 @@ end
 
 group :test do
   gem 'capybara', '~> 2.13.0'
+  gem 'poltergeist'
   gem 'minitest-sub_test_case'
 end
 
