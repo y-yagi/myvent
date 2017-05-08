@@ -4,7 +4,8 @@ import PropTypes from 'prop-types'
 import BigCalendar from 'react-big-calendar'
 import moment from 'moment'
 
-moment.locale('ja');
+moment.locale('ja')
+
 BigCalendar.setLocalizer(
   BigCalendar.momentLocalizer(moment)
 )
@@ -14,7 +15,7 @@ const MyCalendar = props => (
     events={ props.events }
     onSelectEvent={ event => window.location.href = event.url }
   />
-);
+)
 
 MyCalendar.propTypes = {
   events: PropTypes.array
