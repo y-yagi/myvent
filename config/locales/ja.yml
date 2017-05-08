@@ -3,6 +3,8 @@ ja:
     created: "%{model} を作成しました"
     updated: "%{model} を更新しました"
     destroyed: "%{model} を削除しました"
+    new: "%{model} を作成"
+    edit: "%{model} を編集"
   activerecord:
     errors:
       messages:
