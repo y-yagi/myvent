@@ -28,7 +28,7 @@ h3.logo-font イベントリスト
             td = event.end_at
             td = event.place_name
             td = event.memo
-            td = link_to event.url, target: '_blank'
+            td = link_to event.url, event.url, target: '_blank'
             td = link_to '編集', edit_event_path(event)
             td = link_to '削除', event, data: { confirm: '本当によろしいですか?' }, method: :delete
 
