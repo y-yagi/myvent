@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'jb'
-gem 'rails', '~> 5.1.0'
+gem 'rails', '~> 5.1.1'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'pg', '~> 0.18'
