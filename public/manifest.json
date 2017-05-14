@@ -1,0 +1,13 @@
+{
+  "name": "Myvent",
+  "short_name": "Myvent",
+  "background_color": "#8bc34a",
+  "theme_color": "#8bc34a",
+  "icons": [{
+        "src": "/icon_128.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }],
+  "start_url": "https://myvent.herokuapp.com/",
+  "display": "standalone"
+}
