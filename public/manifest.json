@@ -1,0 +1,11 @@
+{
+  "name": "Myvent",
+  "short_name": "Myvent",
+  "icons": [{
+        "src": "/icon_128.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }],
+  "start_url": "https://myvent.herokuapp.com/",
+  "display": "standalone"
+}
