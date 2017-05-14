@@ -4,3 +4,8 @@
   width: 100%;
   display: flex;
 }
+
+.scroll-box {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
