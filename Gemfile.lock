@@ -60,8 +60,8 @@ GEM
     ffi (1.9.18)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
-    hashie (3.5.5)
-    i18n (0.8.5)
+    hashie (3.5.6)
+    i18n (0.8.6)
     jb (0.4.1)
       multi_json
     jwt (1.5.6)
