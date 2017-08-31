@@ -25,7 +25,8 @@ end
 
 group :test do
   gem 'capybara', '~> 2.15.1'
-  gem 'poltergeist'
+  gem 'chromedriver-helper'
+  gem 'selenium-webdriver'
   gem 'minitest-sub_test_case'
 end
 
