@@ -2,7 +2,7 @@
   "name": "myvent",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^3.0.0",
+    "@rails/webpacker": "^3.0.1",
     "autoprefixer": "^7.1.4",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
