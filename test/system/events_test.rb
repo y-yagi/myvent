@@ -28,5 +28,6 @@ class EventsTest < ApplicationSystemTestCase
     assert_equal 'http://babel2017.jp/', event.url
     assert_equal '東京都美術館', event.place_name
     assert_equal '前売り券はもってない', event.memo
+    assert page.find('.rbc-calendar')
   end
 end
