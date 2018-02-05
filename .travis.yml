@@ -22,6 +22,7 @@ script:
   - yarn install
   - RAILS_ENV=test bundle exec rake db:migrate
   - bin/rails test
+  - NODE_ENV=test bundle exec rails webpacker:compile
   - bin/rails test:system
 before_script:
   - export TZ=Asia/Tokyo
