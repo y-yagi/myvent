@@ -117,7 +117,7 @@ GEM
     omniauth-oauth2 (1.5.0)
       oauth2 (~> 1.1)
       omniauth (~> 1.2)
-    pg (0.21.0)
+    pg (1.0.0)
     public_suffix (3.0.1)
     puma (3.11.2)
     rack (2.0.4)
@@ -215,7 +215,7 @@ DEPENDENCIES
   minitest-sub_test_case
   omniauth
   omniauth-google-oauth2
-  pg (~> 0.18)
+  pg (~> 1.0)
   puma (~> 3.11)
   rails (~> 5.2.0.rc1)
   selenium-webdriver
