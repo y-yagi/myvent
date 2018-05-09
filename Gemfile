@@ -23,7 +23,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'capybara', '~> 3.0.2'
+  gem 'capybara', '~> 3.0.3'
   gem 'chromedriver-helper'
   gem 'selenium-webdriver'
   gem 'minitest-sub_test_case'
