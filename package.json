@@ -17,7 +17,7 @@
     "file-loader": "^1.1.11",
     "glob": "^7.1.2",
     "js-yaml": "^3.11.0",
-    "moment": "^2.22.1",
+    "moment": "^2.22.2",
     "node-sass": "^4.9.0",
     "path-complete-extname": "^1.0.0",
     "postcss-loader": "^2.1.5",
