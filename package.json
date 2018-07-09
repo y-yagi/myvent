@@ -25,7 +25,7 @@
     "precss": "^3.1.2",
     "prop-types": "^15.6.2",
     "rails-erb-loader": "^5.4.2",
-    "react": "^16.4.0",
+    "react": "^16.4.1",
     "react-big-calendar": "^0.19.1",
     "react-dom": "^16.4.1",
     "sass-loader": "^7.0.1",
