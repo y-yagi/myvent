@@ -28,7 +28,7 @@
     "react": "^16.4.1",
     "react-big-calendar": "^0.19.1",
     "react-dom": "^16.4.1",
-    "sass-loader": "^7.0.1",
+    "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1",
