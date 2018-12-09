@@ -5291,14 +5291,14 @@ react-big-calendar@^0.19.2:
     uncontrollable "^4.0.0"
     warning "^2.0.0"
 
-react-dom@^16.5.0:
-  version "16.5.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.5.0.tgz#57704e5718669374b182a17ea79a6d24922cb27d"
+react-dom@^16.6.1:
+  version "16.6.1"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.6.1.tgz#5476e08694ae504ae385a28b62ecc4fe3a29add9"
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-    schedule "^0.3.0"
+    scheduler "^0.11.0"
 
 react-overlays@^0.7.0:
   version "0.7.0"
@@ -5659,6 +5659,13 @@ schedule@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/schedule/-/schedule-0.3.0.tgz#1be2ab2fc2e768536269ce7326efb478d6c045e8"
   dependencies:
+    object-assign "^4.1.1"
+
+scheduler@^0.11.0:
+  version "0.11.3"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.11.3.tgz#b5769b90cf8b1464f3f3cfcafe8e3cd7555a2d6b"
+  dependencies:
+    loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
 schema-utils@^0.3.0:

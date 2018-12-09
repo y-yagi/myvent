@@ -27,7 +27,7 @@
     "rails-erb-loader": "^5.5.0",
     "react": "^16.5.0",
     "react-big-calendar": "^0.19.2",
-    "react-dom": "^16.5.0",
+    "react-dom": "^16.6.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "webpack": "^3.11.0",
