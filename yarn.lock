@@ -1741,22 +1741,20 @@ css-loader@^0.28.11:
     postcss-value-parser "^3.3.0"
     source-list-map "^2.0.0"
 
-css-loader@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-1.0.0.tgz#9f46aaa5ca41dbe31860e3b62b8e23c42916bf56"
+css-loader@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-2.0.2.tgz#5b02031745ba6d6721bcecad39daaea9804e30d3"
   dependencies:
-    babel-code-frame "^6.26.0"
-    css-selector-tokenizer "^0.7.0"
-    icss-utils "^2.1.0"
+    icss-utils "^4.0.0"
     loader-utils "^1.0.2"
-    lodash.camelcase "^4.3.0"
-    postcss "^6.0.23"
-    postcss-modules-extract-imports "^1.2.0"
-    postcss-modules-local-by-default "^1.2.0"
-    postcss-modules-scope "^1.1.0"
-    postcss-modules-values "^1.3.0"
+    lodash "^4.17.11"
+    postcss "^7.0.6"
+    postcss-modules-extract-imports "^2.0.0"
+    postcss-modules-local-by-default "^2.0.3"
+    postcss-modules-scope "^2.0.0"
+    postcss-modules-values "^2.0.0"
     postcss-value-parser "^3.3.0"
-    source-list-map "^2.0.0"
+    schema-utils "^1.0.0"
 
 css-selector-tokenizer@^0.7.0:
   version "0.7.0"
@@ -2932,6 +2930,12 @@ icss-utils@^2.1.0:
   dependencies:
     postcss "^6.0.1"
 
+icss-utils@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/icss-utils/-/icss-utils-4.0.0.tgz#d52cf4bcdcfa1c45c2dbefb4ffdf6b00ef608098"
+  dependencies:
+    postcss "^7.0.5"
+
 ieee754@^1.1.4:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.1.8.tgz#be33d40ac10ef1926701f6f08a2d86fbfd1ad3e4"
@@ -3535,6 +3539,10 @@ lodash.uniq@^4.5.0:
 "lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.14.0, lodash@^4.17.2, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0:
   version "4.17.5"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
+
+lodash@^4.17.11:
+  version "4.17.11"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
 
 lodash@~4.16.4:
   version "4.16.6"
@@ -4817,12 +4825,26 @@ postcss-modules-extract-imports@^1.2.0:
   dependencies:
     postcss "^6.0.1"
 
+postcss-modules-extract-imports@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-modules-extract-imports/-/postcss-modules-extract-imports-2.0.0.tgz#818719a1ae1da325f9832446b01136eeb493cd7e"
+  dependencies:
+    postcss "^7.0.5"
+
 postcss-modules-local-by-default@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/postcss-modules-local-by-default/-/postcss-modules-local-by-default-1.2.0.tgz#f7d80c398c5a393fa7964466bd19500a7d61c069"
   dependencies:
     css-selector-tokenizer "^0.7.0"
     postcss "^6.0.1"
+
+postcss-modules-local-by-default@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/postcss-modules-local-by-default/-/postcss-modules-local-by-default-2.0.3.tgz#6a199d596ec3ef57b8f5ced96d786b8cb16a7dec"
+  dependencies:
+    css-selector-tokenizer "^0.7.0"
+    postcss "^7.0.6"
+    postcss-value-parser "^3.3.1"
 
 postcss-modules-scope@^1.1.0:
   version "1.1.0"
@@ -4831,12 +4853,26 @@ postcss-modules-scope@^1.1.0:
     css-selector-tokenizer "^0.7.0"
     postcss "^6.0.1"
 
+postcss-modules-scope@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-modules-scope/-/postcss-modules-scope-2.0.1.tgz#2c0f2394cde4cd09147db054c68917e38f6d43a4"
+  dependencies:
+    css-selector-tokenizer "^0.7.0"
+    postcss "^7.0.6"
+
 postcss-modules-values@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/postcss-modules-values/-/postcss-modules-values-1.3.0.tgz#ecffa9d7e192518389f42ad0e83f72aec456ea20"
   dependencies:
     icss-replace-symbols "^1.1.0"
     postcss "^6.0.1"
+
+postcss-modules-values@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-modules-values/-/postcss-modules-values-2.0.0.tgz#479b46dc0c5ca3dc7fa5270851836b9ec7152f64"
+  dependencies:
+    icss-replace-symbols "^1.1.0"
+    postcss "^7.0.6"
 
 postcss-nested@^3.0.0:
   version "3.0.0"
@@ -5039,6 +5075,10 @@ postcss-value-parser@3.3.0, postcss-value-parser@^3.0.1, postcss-value-parser@^3
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.0.tgz#87f38f9f18f774a4ab4c8a232f5c5ce8872a9d15"
 
+postcss-value-parser@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.1.tgz#9ff822547e2893213cf1c30efa51ac5fd1ba8281"
+
 postcss-values-parser@^1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/postcss-values-parser/-/postcss-values-parser-1.3.2.tgz#051aa9619e15fa1b672aaf0f6c1398be961f17fd"
@@ -5072,7 +5112,7 @@ postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0
     source-map "^0.5.6"
     supports-color "^3.2.3"
 
-postcss@^6, postcss@^6.0, postcss@^6.0.0, postcss@^6.0.1, postcss@^6.0.10, postcss@^6.0.11, postcss@^6.0.13, postcss@^6.0.14, postcss@^6.0.16, postcss@^6.0.18, postcss@^6.0.19, postcss@^6.0.23, postcss@^6.0.3, postcss@^6.0.5, postcss@^6.0.6, postcss@^6.0.9:
+postcss@^6, postcss@^6.0, postcss@^6.0.0, postcss@^6.0.1, postcss@^6.0.10, postcss@^6.0.11, postcss@^6.0.13, postcss@^6.0.14, postcss@^6.0.16, postcss@^6.0.18, postcss@^6.0.19, postcss@^6.0.3, postcss@^6.0.5, postcss@^6.0.6, postcss@^6.0.9:
   version "6.0.23"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.23.tgz#61c82cc328ac60e677645f979054eb98bc0e3324"
   dependencies:
@@ -5087,6 +5127,14 @@ postcss@^7.0.0, postcss@^7.0.2:
     chalk "^2.4.1"
     source-map "^0.6.1"
     supports-color "^5.4.0"
+
+postcss@^7.0.5, postcss@^7.0.6:
+  version "7.0.7"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.7.tgz#2754d073f77acb4ef08f1235c36c5721a7201614"
+  dependencies:
+    chalk "^2.4.1"
+    source-map "^0.6.1"
+    supports-color "^5.5.0"
 
 precss@^3.1.2:
   version "3.1.2"
@@ -6197,6 +6245,12 @@ supports-color@^5.3.0:
 supports-color@^5.4.0:
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.4.0.tgz#1c6b337402c2137605efe19f10fec390f6faab54"
+  dependencies:
+    has-flag "^3.0.0"
+
+supports-color@^5.5.0:
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
   dependencies:
     has-flag "^3.0.0"
 
