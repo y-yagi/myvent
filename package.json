@@ -24,7 +24,7 @@
     "postcss-smart-import": "^0.7.6",
     "precss": "^3.1.2",
     "prop-types": "^15.6.2",
-    "rails-erb-loader": "^5.5.0",
+    "rails-erb-loader": "^5.5.1",
     "react": "^16.7.0",
     "react-big-calendar": "^0.19.2",
     "react-dom": "^16.6.1",
